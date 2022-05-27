@@ -1,0 +1,169 @@
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+int main() {
+  int des;
+  int age;
+  string nm;
+  char x;
+  
+    cout << "Selamat datang di Hannaticket.com!";
+    cout << "\nSilahkan isi nama lengkap dan umur anda!";
+    cout << "\nNama Lengkap : "; getline(cin, nm);
+    cout << "Umur         : "; cin >> age;
+ input:
+    cout << "\nTujuan Destinasi :";
+    cout << "\n 1. Singapore \n 2. Malaysia \n 3. Thailand \n 4. Hong Kong \n 5. Vietnam ";
+    cout << "\nSilahkan masukkan destinasi anda (pilih angka 1-5) : " ; cin >> des;
+  while (des!=1 and des!=2 and des !=3 and des!=4 and des!=5)
+    {
+    cout << "Mohon isi dengan angka 1-5";
+    cout << "\nSilahkan masukkan destinasi anda : " ; cin >> des;
+    }
+  if (des==1)
+  {
+  cout << "\nAnda memilih tujuan destinasi Singapore (883 km)"
+       << "\nHarga tiket dari Jakarta(CGK)-Singapore(SIN) sebesar Rp. 1.014.000,00"
+       << "\nApakah anda ingin melanjutkan ke pembayaran? (y/t) "; cin >> x;
+  while (x!='y' and x!='t')
+  {
+    cout << "Mohon isi dengan y atau t";
+    cout << "\nApakah anda ingin melanjutkan ke pembayaran? (y/t) "; cin >> x;
+  }
+  if (x=='y')
+  {
+    cout << "\n--------------------------------------------------------------------------------";
+    cout << "\n                                 Hannaticket.Com";
+    cout << "\nNama Pemesan : " << nm;
+    cout << "\nUmur         : " << age;
+    cout << "\nKeberangkatan: Jakarta     (CGK)";
+    cout << "\nTujuan Akhir : Singapore   (SIN)";
+    cout << "\n\nHarga        : Rp 1.014.000,00";
+    cout << "\n\n    Terima Kasih telah mempercayakan Hannaticket.com dengan tiket pesawat anda!";
+    cout << "\n--------------------------------------------------------------------------------";
+  }
+  else if (x=='t')
+  {
+    cout << "\nPemesanan tiket anda telah dibatalkan";
+    goto input;
+  }
+  }
+  
+  else if (des==2)
+  {
+  cout << "Anda memilih tujuan destinasi Malaysia (1188 km)"
+       << "\nHarga tiket dari Jakarta(CGK)-Kuala Lumpur (KUL) sebesar Rp. 932.678,00"
+       << "\nApakah anda ingin melanjutkan ke pembayaran? (y/t) "; cin >> x;
+  while (x!='y' and x!='t')
+  {
+    cout << "Mohon isi dengan y atau t";
+    cout << "\nApakah anda ingin melanjutkan ke pembayaran? (y/t) "; cin >> x;
+  }
+  if (x=='y')
+    {
+    cout << "\n--------------------------------------------------------------------------------";
+    cout << "\n                                 Hannaticket.Com";
+    cout << "\nNama Pemesan : " << nm;
+    cout << "\nUmur         : " << age;
+    cout << "\nKeberangkatan: Jakarta     (CGK)";
+    cout << "\nTujuan Akhir : Kuala Lumpur (KUL)";
+    cout << "\n\nHarga        : Rp 932.678,00";
+    cout << "\n\n    Terima Kasih telah mempercayakan Hannaticket.com dengan tiket pesawat anda!";
+    cout << "\n--------------------------------------------------------------------------------";
+  }
+  else if (x=='t')
+  {
+    cout << "\nPemesanan tiket anda telah dibatalkan";
+    goto input;
+  }
+  }
+  
+  else if (des==3)
+  {
+  cout << "Anda memilih tujuan destinasi Thailand (2328 km)"
+       << "\nHarga tiket dari Jakarta(CGK)-Bangkok(DMK) sebesar Rp. 1.309.266,00"
+       << "\nApakah anda ingin melanjutkan ke pembayaran? (y/t) "; cin >> x;
+  while (x!='y' and x!='t')
+  {
+    cout << "Mohon isi dengan y atau t";
+    cout << "\nApakah anda ingin melanjutkan ke pembayaran? (y/t) "; cin >> x;
+  }
+  if (x=='y')
+    {
+    cout << "\n--------------------------------------------------------------------------------";
+    cout << "\n                                 Hannaticket.Com";
+    cout << "\nNama Pemesan : " << nm;
+    cout << "\nUmur         : " << age;
+    cout << "\nKeberangkatan: Jakarta     (CGK)";
+    cout << "\nTujuan Akhir : Bangkok     (DMK)";
+    cout << "\n\nHarga        : Rp 1.309.266,00";
+    cout << "\n\n    Terima Kasih telah mempercayakan Hannaticket.com dengan tiket pesawat anda!";
+    cout << "\n--------------------------------------------------------------------------------";
+  }
+  else if (x=='t')
+  {
+    cout << "\nPemesanan tiket anda telah dibatalkan";
+    goto input;
+  }
+  }
+  else if (des==4)
+  {
+  cout << "Anda memilih tujuan destinasi Hong Kong (3269 km)"
+       << "\nHarga tiket dari Jakarta(CGK)-Hong Kong (HKG) sebesar Rp. 2.428.327,00"
+       << "\nApakah anda ingin melanjutkan ke pembayaran? (y/t) "; cin >> x;
+  while (x!='y' and x!='t')
+  {
+    cout << "Mohon isi dengan y atau t";
+    cout << "\nApakah anda ingin melanjutkan ke pembayaran? (y/t) "; cin >> x;
+  }
+  if (x=='y')
+    {
+    cout << "\n--------------------------------------------------------------------------------";
+    cout << "\n                                 Hannaticket.Com";
+    cout << "\nNama Pemesan : " << nm;
+    cout << "\nUmur         : " << age;
+    cout << "\nKeberangkatan: Jakarta     (CGK)";
+    cout << "\nTujuan Akhir : Hong Kong (HKG)";
+    cout << "\n\nHarga        : Rp 2.428.327,00";
+    cout << "\n\n    Terima Kasih telah mempercayakan Hannaticket.com dengan tiket pesawat anda!";
+    cout << "\n--------------------------------------------------------------------------------";
+  }
+  else if (x=='t')
+  {
+    cout << "\nPemesanan tiket anda telah dibatalkan";
+    goto input;
+  }
+  }
+  else if (des==5)
+  {
+  cout << "Anda memilih tujuan destinasi Vietnam (3031 km)"
+       << "\nHarga tiket dari Jakarta(CGK)-Hanoi (HAN) sebesar Rp. 1.878.157,00"
+       << "\nApakah anda ingin melanjutkan ke pembayaran? (y/t) "; cin >> x;
+  while (x!='y' and x!='t')
+  {
+    cout << "Mohon isi dengan y atau t";
+    cout << "\nApakah anda ingin melanjutkan ke pembayaran? (y/t) "; cin >> x;
+  }
+  if (x=='y')
+    {
+    cout << "\n--------------------------------------------------------------------------------";
+    cout << "\n                                 Hannaticket.Com";
+    cout << "\nNama Pemesan : " << nm;
+    cout << "\nUmur         : " << age;
+    cout << "\nKeberangkatan: Jakarta     (CGK)";
+    cout << "\nTujuan Akhir : Hanoi (HAN)";
+    cout << "\n\nHarga        : Rp 1.878.157,00";
+    cout << "\n\n    Terima Kasih telah mempercayakan Hannaticket.com dengan tiket pesawat anda!";
+    cout << "\n--------------------------------------------------------------------------------";
+  }
+  else if (x=='t')
+  {
+    cout << "\nPemesanan tiket anda telah dibatalkan";
+    goto input;
+  }
+  }
+  
+
+
+}
